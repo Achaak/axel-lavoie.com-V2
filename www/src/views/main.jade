@@ -7,6 +7,8 @@ html
         link(rel="stylesheet" type="text/css" href="#{opts.pathCSS}")
         link(rel="stylesheet" type="text/css" href="/build/components.min.css")
         link(rel="stylesheet" type="text/css" href="/build/views/blocks/nav-header/product.min.css")
+        link(rel="stylesheet" type="text/css" href="/build/views/blocks/nav-burger/product.min.css")
+        link(rel="stylesheet" type="text/css" href="/build/views/blocks/footer/product.min.css")
 
         // META
         meta(charset='utf-8')
@@ -28,20 +30,12 @@ html
     body
         include blocks/nav-header/index.jade
 
-        nav#burger-menu
-            ul.link-important
-                li Development
-            
-            ul.link-other
-                li Photography
-                li DIY
-
-            .pictures
+        include blocks/nav-burger/index.jade
 
         // Content
         |!{ opts.html }
 
-        footer
+        include blocks/footer/index.jade
 
         // Script JS
         script(src="/build/components.min.js")
