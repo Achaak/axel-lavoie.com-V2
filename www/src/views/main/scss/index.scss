@@ -1,5 +1,15 @@
+@import 'colors';
+
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    border-bottom: 1px solid $dark-gray;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: $dark-gray;
 }

@@ -13,6 +13,8 @@ exports.createBuild = async (_global, _callback) => {
 
 function isFinish() {
     if (_FILE != _FILE_COMPILED) return false
+
+    console.log("[BUILDER] Build is created".green)
     
     // Callback
     if (_CALLBACK) _CALLBACK();
@@ -63,10 +65,6 @@ async function createBuild( _callback) {
     // Minify the components files
     await minifyComponentsJs(_GLOBAL);
     await minifyComponentsCss(_GLOBAL);
-
-
-
-    console.log("[BUILDER] Build is created".green)
 }
 
 
@@ -148,7 +146,7 @@ async function minifyProductScss(_filesPathScss) {
                 _cssPathList.push(_cssPath);
     
                 // If the last scss is compile
-                if (i == _filesPathScss.length-1) {
+                if (_cssPathList.length == _filesPathScss.length) {
                     minifyProductCss(_cssPathList);
                 }
             });
@@ -159,7 +157,6 @@ async function minifyProductScss(_filesPathScss) {
 
 // Function to minify the CSS in product file
 async function minifyProductCss(_cssPathList) {
-    
     // Minify css
     var uglified = await _GLOBAL.uglifycss.processFiles(
         _cssPathList,
@@ -172,7 +169,7 @@ async function minifyProductCss(_cssPathList) {
 
     // Delete css file
     for (let i = 0; i < _cssPathList.length; i++) {
-        _GLOBAL.rimraf(_cssPathList[i], function () {});
+        //_GLOBAL.rimraf(_cssPathList[i], function () {});
     }
 
     _FILE_COMPILED++;
@@ -192,9 +189,9 @@ async function minifyComponentsJs() {
     // Defind files content
     var _filesContent = {};
     
-    for (let i = 0; i < _GLOBAL.opts.components.js.length; i++) {
-        _FILE += _GLOBAL.opts.components.js.length;
+    _FILE++;
 
+    for (let i = 0; i < _GLOBAL.opts.components.js.length; i++) {
         _filePath = _GLOBAL.path.join(__dirname, "../www/components", _GLOBAL.opts.components.js[i]);
         _filesContent["file"+i] = _GLOBAL.fs.readFileSync(_GLOBAL.path.join(_filePath), "utf8");
     }
@@ -214,10 +211,10 @@ async function minifyComponentsJs() {
 
 // Function to minify the css in component file
 async function minifyComponentsCss() {
+    _FILE++;
+
     // Foramt css path
     for (let i = 0; i < _GLOBAL.opts.components.css.length; i++) {
-        _FILE += _GLOBAL.opts.components.css.length;
-
         _GLOBAL.opts.components.css[i] = _GLOBAL.path.join(__dirname, "../www/components", _GLOBAL.opts.components.css[i]);
     }
 

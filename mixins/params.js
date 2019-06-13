@@ -24,10 +24,17 @@ exports.getParams = function(_global, _callback) {
         // Components
         components: {
             css: [
-                "/fontawesome/css/all.css"
+                "/fontawesome/css/all.css",
+                "/foundation/css/foundation.css",
+                "/foundation/css/app.css",
+                "/slider/slider.css"
             ],
             js: [
-                "/jquery/jquery.min.js"
+                "/jquery/jquery.min.js",
+                "/foundation/js/vendor/foundation.js",
+                "/foundation/js/app.js",
+                "/lodash/lodash.js",
+                "/slider/slider.js"
             ]
         },
 
