@@ -46,16 +46,16 @@ async function createBuild( _callback) {
         var _folder = _filePath[i];
 
         var _filesJs = await _GLOBAL.tools.getFiles(_GLOBAL.path.join(_folder, "/js"), "js", opts = { recursive: false});
-        _FILE += _filesJs.length
+        _FILE += _filesJs.length;
         await minifyProductJs(_filesJs);
         
-        var _filesScss = await _GLOBAL.tools.getFiles(_GLOBAL.path.join(_folder, "/scss"), "scss", opts = { recursive: false})
-        _FILE += _filesScss.length
+        var _filesScss = await _GLOBAL.tools.getFiles(_GLOBAL.path.join(_folder, "/scss"), "scss", opts = { recursive: false});
+        _FILE += _filesScss.length;
         await minifyProductScss(_filesScss);
     }
 
     // Launch SCSS minifier for main scss
-    var _filesScss = await _GLOBAL.tools.getFiles( _GLOBAL.path.join(__dirname, "/../www/src/views/main/scss"), "scss", opts = { recursive: false})
+    var _filesScss = await _GLOBAL.tools.getFiles( _GLOBAL.path.join(__dirname, "/../www/src/views/main/scss"), "scss", opts = { recursive: false});
     await minifyProductScss(_filesScss);
 
 
@@ -92,13 +92,15 @@ async function minifyProductJs(_filesPath) {
     var _minifyJs = await _GLOBAL.uglifyJS.minify(_filesContent);
 
     // Create folder
-    await _GLOBAL.asyncMkdir(_GLOBAL.path.join(_GLOBAL._.first(_filesPath).folder.replace("src", "build"), ".."), { recursive: true }, async (_err) => {});
-
+    await _GLOBAL.asyncMkdir(_GLOBAL.path.join(_GLOBAL._.first(_filesPath).folder.replace("src", "build"), ".."), { recursive: true });
+        
     // Create file
-    await _GLOBAL.asyncWriteFile(_GLOBAL.path.join(_GLOBAL._.first(_filesPath).folder.replace("src", "build"), "../product.min.js"), _minifyJs.code, "utf8");
-    
-    _FILE_COMPILED++;
-    isFinish();
+    _GLOBAL.fs.writeFile(_GLOBAL.path.join(_GLOBAL._.first(_filesPath).folder.replace("src", "build"), "../product.min.js"), _minifyJs.code, (err) => {
+        if (err) return console.log("[ERROR] "+ JSON.stringify(err).red);
+        
+        _FILE_COMPILED++;
+        isFinish();
+    });
 }
 
 

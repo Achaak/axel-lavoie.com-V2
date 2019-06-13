@@ -1,1 +1,1 @@
-#header{box-shadow:0 0 7px -3px black}
+nav#header{justify-content:space-between;align-items:center;display:flex;box-shadow:0 0 7px -3px black;padding:0 50px;height:50px}nav#header ul.burger li{background-color:black;height:3px;width:30px;margin:5px 0;list-style:none}nav#header ul.link{display:flex}nav#header ul.link li{list-style:none;text-transform:uppercase;margin:0 15px;font-family:'Roboto-Medium',sans-serif}
