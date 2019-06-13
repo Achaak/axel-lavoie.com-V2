@@ -218,7 +218,7 @@ async function minifyComponentsCss() {
     for (let i = 0; i < _GLOBAL.opts.components.css.length; i++) {
         _FILE += _GLOBAL.opts.components.css.length;
 
-        _GLOBAL.opts.components.css[i] = _GLOBAL.path.join(__dirname, "../www/build", _GLOBAL.opts.components.css[i]);
+        _GLOBAL.opts.components.css[i] = _GLOBAL.path.join(__dirname, "../www/components", _GLOBAL.opts.components.css[i]);
     }
 
     // If is empty

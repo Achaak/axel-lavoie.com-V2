@@ -23,7 +23,9 @@ exports.getParams = function(_global, _callback) {
 
         // Components
         components: {
-            css: [],
+            css: [
+                "/fontawesome/css/all.css"
+            ],
             js: [
                 "/jquery/jquery.min.js"
             ]
@@ -33,7 +35,8 @@ exports.getParams = function(_global, _callback) {
             "/build",
             "/assets",
             "/fonts",
-            "/reload"
+            "/reload",
+            "/components"
         ]
     };
 

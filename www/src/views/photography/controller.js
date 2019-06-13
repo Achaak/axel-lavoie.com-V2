@@ -2,7 +2,7 @@ exports.getOpts = function(_global) {
     var opts = {
         route: "/photography",
         title: "test",
-        description: "Hello world"
+        description: "Hello world",
         //hrefIcon   : "",
 
         // Open Graph
@@ -13,6 +13,19 @@ exports.getOpts = function(_global) {
         //    type       : "",
         //    url        : ""
         //}
+
+        navBurger: {
+            en: [
+                {
+                    id: "photos",
+                    name: "Photos",
+                },
+                {
+                    id: "contact",
+                    name: "Contact"
+                }
+            ]
+        }
     };
 
     return opts;

@@ -33,18 +33,24 @@ nav#burger-menu {
         transition: left 1s;
 
         ul.close {
+            position: relative;
+            height: 30px;
+            width: 30px;
+            cursor: pointer;
+
             li {
                 background-color: black;
                 height: 3px;
                 width: 30px;
                 margin: 5px 0;
                 list-style: none;
+                position: absolute;
 
                 &:nth-child(1) {
-                    transform: rotate3d(0, 0, 1, 45deg) translate3d(25%, 0, 0);
+                    transform: rotate3d(0,0,1,45deg) translate3d(5px,5px,0);
                 }
                 &:nth-child(2) {
-                    transform: rotate3d(0, 0, 1, -45deg) translate3d(25%, 0, 0);
+                    transform: rotate3d(0,0,1,-45deg) translate3d(-5px,5px,0);
                 }
             }
         }

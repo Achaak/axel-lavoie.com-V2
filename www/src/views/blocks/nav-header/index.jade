@@ -1,12 +1,26 @@
 nav#header
-    ul.burger
-        li
-        li
-        li
+    .block-left
+        ul.burger
+            li
+            li
+            li
+
+        h1
+            a(href="/") Axel Lavoie
 
     ul.link
         each el in opts.navBurger.en
-            li=el.name
+            li
+                a(href="##{el.id}")=el.name
 
-    ul
+    ul.social
+        li
+            a(href="https://fr.linkedin.com/in/axellavoie" target="_blank")
+                i(class="fab fa-linkedin")
+        li
+            a(href="https://github.com/Achaak" target="_blank")
+                i(class="fab fa-github")
+        li
+            a(href="https://www.instagram.com/_achaak/" target="_blank")
+                i(class="fab fa-instagram")
     
