@@ -27,14 +27,16 @@ exports.getParams = function(_global, _callback) {
                 "/fontawesome/css/all.css",
                 "/foundation/css/foundation.css",
                 "/foundation/css/app.css",
-                "/slider/slider.css"
+                "/slider/slider.css",
+                "/circle-bar/circle-bar.css"
             ],
             js: [
                 "/jquery/jquery.min.js",
                 "/foundation/js/vendor/foundation.js",
                 "/foundation/js/app.js",
                 "/lodash/lodash.js",
-                "/slider/slider.js"
+                "/slider/slider.js",
+                "/circle-bar/circle-bar.js"
             ]
         },
 

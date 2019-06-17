@@ -1,4 +1,4 @@
-var slider = (function () {
+function slider() {
     // DOM variable
     var sliderDOM   = undefined;
     var btnsDOM     = $('<div class="btns-slider"></div>');
@@ -17,6 +17,7 @@ var slider = (function () {
      * @private
      * @param {string} _elem Class or id of the slider
      * @param {Array} _pictures List of the pictures path and link
+     * @param {number} _interval Interval between the picture (millisecond)
      */
     function createSlider(_elem, _pictures, _interval) {
         // Create the DOM
@@ -182,4 +183,4 @@ var slider = (function () {
             clearLoop();
         }
     };
-})();
+}

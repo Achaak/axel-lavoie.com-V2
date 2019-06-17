@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    slider.init(
+    var test = slider().init(
         "#slider", 
         [
             {
