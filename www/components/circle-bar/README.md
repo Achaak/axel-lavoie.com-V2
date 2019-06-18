@@ -1,6 +1,9 @@
 # circle-bar
 This is a module to simply add a circle bar to your site.
 
+<img src="pictures/circle-bar-preview.png" alt="circle bar preview"/>
+
+
 ## Requirement :
 * JQuery
 
@@ -70,13 +73,13 @@ text: [string],
 lineColor: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>,
 lineBgColor: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>,
 backgroundColor: <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> | currentcolor | <deprecated-system-color>,
-lineWidth: [integer],
-lineWidthHover: [integer],
-bgLineWidth: [integer],
-bgLineWidthHover: [integer],
+lineWidth: [number],
+lineWidthHover: [number],
+bgLineWidth: [number],
+bgLineWidthHover: [number],
 lineDuration: [duration],
 lineDelay: [duration],
-diameter: [integer],
+diameter: [number],
 viewPourcentage: [boolean],
 textCSS: {
 /*
