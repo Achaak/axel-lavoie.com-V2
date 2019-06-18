@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    test = circleBar();
+    test = CircleBar();
     
     test.init(
         "#skills", 
