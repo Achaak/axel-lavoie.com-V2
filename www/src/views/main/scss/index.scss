@@ -8,8 +8,13 @@
 
 h2 {
     text-transform: uppercase;
-    border-bottom: 1px solid $dark-gray;
+    border-bottom: 1px solid $dark-grey;
     padding-bottom: 5px;
     margin-bottom: 20px;
-    color: $dark-gray;
+    color: $dark-grey;
+}
+
+section.grid-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

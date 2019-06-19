@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    test = CircleBar();
+    /*test = CircleBar();
     
     test.init(
         "#skills", 
@@ -30,5 +30,5 @@ $(document).ready(function() {
                 color: "pink"
             }
         },
-        50);
+        50);*/
 });

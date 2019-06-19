@@ -1,0 +1,18 @@
+section#contact.grid-container
+    .grid-x.grid-padding-x
+        .large-12.cell
+            h2 Contact
+
+        .large-12.cell
+            form#contact-form
+                .input-ctner
+                    input(type="text" id="contact-name" required)
+                    label.input-title(for="contact-name") Votre nom/entreprise
+
+                .input-ctner
+                    input(type="email" id="contact-email" required)
+                    label.input-title(for="contact-email") Votre mail
+
+                textarea(id="contact-text" required)
+                
+                button(type="submit" id="contact-submit" form="contact-form") Envoyer

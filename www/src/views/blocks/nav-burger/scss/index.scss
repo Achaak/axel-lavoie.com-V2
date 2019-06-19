@@ -6,6 +6,7 @@ nav#burger-menu {
     right: 0;
     pointer-events: none;
     z-index: 2;
+    overflow: hidden;
 
     &.show {
         pointer-events: auto;

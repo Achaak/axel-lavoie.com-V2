@@ -45,7 +45,8 @@ exports.getParams = function(_global, _callback) {
             "/assets",
             "/fonts",
             "/reload",
-            "/components"
+            "/components",
+            "/socket.io"
         ]
     };
 

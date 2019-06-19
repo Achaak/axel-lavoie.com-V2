@@ -1,5 +1,7 @@
 var global = {};
 
+var port = 8081;
+
 global.builder = require("./mixins/builder.js");
 global.routes  = require("./mixins/routes.js");
 
@@ -8,36 +10,32 @@ global.tools.create(global);
 
 global.params  = require("./mixins/params.js");
 
-global.http      = require('http');
-global.fs        = require('fs');
-global.util      = require('util');
+global.http       = require('http');
+global.fs         = require('fs');
+global.util       = require('util');
 global.asyncReadFile  = global.util.promisify(global.fs.readFile);
 global.asyncWriteFile = global.util.promisify(global.fs.writeFile);
 global.asyncMkdir     = global.util.promisify(global.fs.mkdir);
 global.asyncAccess    = global.util.promisify(global.fs.access)
-global.express   = require('express');
-global.colors    = require('colors');
-global._         = require('lodash');
-global.uglifyJS  = require('uglify-js');
-global.uglifycss = require("uglifycss");
-global.sass      = require('node-sass');
-global.rimraf    = require("rimraf");
-global.path      = require("path");
-global.reload    = require("reload");
+global.express    = require('express');
+global.colors     = require('colors');
+global._          = require('lodash');
+global.uglifyJS   = require('uglify-js');
+global.uglifycss  = require("uglifycss");
+global.sass       = require('node-sass');
+global.rimraf     = require("rimraf");
+global.path       = require("path");
+global.reload     = require("reload");
 
 global.app    = global.express();
 global.server = global.http.createServer(global.app);
 
-// Emit event
-const EventEmitter = require('events')
-global.emitEvent = new EventEmitter();
 
 
 
 // Defind template
 global.app.set('views', './www/src/views');
 global.app.set('view engine', 'jade');
-
 
 // Prepare the server
 prepareServer()
@@ -51,12 +49,13 @@ async function prepareServer() {
     await global.params.getParams(global);
     
     // Create the build
-    await global.builder.createBuild(global, async () => {
+    await global.builder.initBuilder(global, async () => {
         // Create all path
-        await global.routes.createPath(global);
+        await global.routes.initRoute(global);
 
         startServer();
     } );
+
 }
 
 
@@ -66,9 +65,17 @@ function startServer() {
     global.server = global.http.createServer(global.app);
 
     global.server.listen(
-        8081, 
-        () => console.log("[SERVER]  -- Server is started ! --".green)
+        port, 
+        () => console.log(("[SERVER]      -- Server is started to "+port+" ! --").green)
     );
+    
+    // Initialize the mailer
+    global.socketIo   = require("socket.io").listen(global.server);
+    global.nodemailer = require('nodemailer');
+    global.mailer     = require("./mixins/mailer.js");
+
+    // Require Socket.io
+    global.mailer = global.mailer.initMailer(global);
 
     global.reload(global.app);
 }
