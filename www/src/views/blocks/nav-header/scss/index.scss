@@ -7,14 +7,26 @@ nav#header {
     box-shadow: 0px 0px 7px -3px black;
     padding: 0 50px;
     height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
 
     .block-left {
         display: flex;
         align-items: center;
-        flex-grow: 1;
+        flex: 1;
 
         ul.burger {
             cursor: pointer;
+
+            &:hover {
+                li {
+                    margin: 2px 0;
+                }
+            }
             
             li {
                 background-color: $dark-grey;
@@ -22,6 +34,7 @@ nav#header {
                 width: 30px;
                 margin: 5px 0;
                 list-style: none;
+                transition: margin 150ms;
             }
         }
 
@@ -40,12 +53,20 @@ nav#header {
     ul.link {
         display: flex;
         justify-content: center;
-        flex-grow: 2;
+        flex: 2;
 
         li {
             list-style: none;
             text-transform: uppercase;
-            margin: 0px 15px;
+            margin: 0px 5px;
+            border-bottom: 3px solid transparent;
+            transition: border-bottom 300ms;
+            padding: 12px 10px;
+
+            &.visible {
+                border-bottom-width: 3px;
+                border-bottom-style: solid;
+            }
             
             a {
                 font-family: 'Roboto-Medium', sans-serif;
@@ -58,7 +79,7 @@ nav#header {
     ul.social {
         display: flex;
         justify-content: flex-end;
-        flex-grow: 1;
+        flex: 1;
 
         li {
             margin-left: 15px;

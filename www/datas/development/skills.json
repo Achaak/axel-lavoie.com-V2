@@ -1,0 +1,130 @@
+{
+    "main": [
+        {
+            "name": "JS / JQUERY",
+            "value": 90,
+            "lineColor": "#f7df1e",
+            "lineBgColor": "#000000"
+        },
+        {
+            "name": "Node.js",
+            "value": 80,
+            "lineColor": "#68A063",
+            "lineBgColor": "#323232"
+        }
+    ],
+    "secondary": [
+        {
+            "name": "HTML5",
+            "value": 100,
+            "lineColor": "#e44d26",
+            "lineBgColor": "#000000"
+        },
+        {
+            "name": "CSS3",
+            "value": 100,
+            "lineColor": "#0070bb",
+            "lineBgColor": "#000000"
+        },
+        {
+            "name": "CoffeeScript",
+            "value": 80,
+            "lineColor": "#181831",
+            "lineBgColor": ""
+        },
+        {
+            "name": "PHP",
+            "value": 70,
+            "lineColor": "#7478AE",
+            "lineBgColor": "#000000"
+        },
+        {
+            "name": "JAVA",
+            "value": 70,
+            "lineColor": "#D5360E",
+            "lineBgColor": "#709DF4"
+        },
+        {
+            "name": "XML",
+            "value": 70,
+            "lineColor": "#F57800",
+            "lineBgColor": ""
+        },
+        {
+            "name": "MySQL",
+            "value": 85,
+            "lineColor": "#00618A",
+            "lineBgColor": "#E48E00"
+        },
+        {
+            "name": "Bootstrap",
+            "value": 100,
+            "lineColor": "#5A4480",
+            "lineBgColor": "#8C7DA7"
+        },
+        {
+            "name": "PhpMyAdmin",
+            "value": 100,
+            "lineColor": "#FF9800",
+            "lineBgColor": "#656598"
+        },
+        {
+            "name": "Wordpress",
+            "value": 60,
+            "lineColor": "#22789E",
+            "lineBgColor": "#63ABC6"
+        },
+        {
+            "name": "Android",
+            "value": 40,
+            "lineColor": "#A5C736",
+            "lineBgColor": ""
+        },
+        {
+            "name": "Git",
+            "value": 100,
+            "lineColor": "#F05030",
+            "lineBgColor": "#000000"
+        }
+    ],
+    "software": [
+        {
+            "name": "Photoshop",
+            "value": 70,
+            "lineColor": "#00C3F8",
+            "lineBgColor": "#001C25"
+        },
+        {
+            "name": "Illustrator",
+            "value": 65,
+            "lineColor": "#FF7D00",
+            "lineBgColor": "#210B00"
+        },
+        {
+            "name": "Lightroom",
+            "value": 30,
+            "lineColor": "#A5CEE6",
+            "lineBgColor": "#303C44"
+        }
+    ],
+    "os": [
+        {
+            "name": "Windows",
+            "value": 100,
+            "lineColor": "#037BD7",
+            "lineBgColor": ""
+        },
+        {
+            "name": "Mac OS",
+            "value": 100,
+            "lineColor": "#A9A9A9",
+            "lineBgColor": "#403E3F"
+        },
+        {
+            "name": "Linux",
+            "value": 70,
+            "lineColor": "#F8A103",
+            "lineBgColor": ""
+        }
+    ]
+}

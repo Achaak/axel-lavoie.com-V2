@@ -1,0 +1,89 @@
+@import '../../../main/scss/colors';
+
+footer {
+    background-color: #151515;
+    color: white;
+
+    .footer-top {
+        font-size: 0.8rem;
+        background-color: #252a2c;
+        display: flex;
+        padding: 30px 100px;
+
+        .title {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .contact {
+            margin-left: 20px;
+            display: flex;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .footer-center {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 60px 100px;
+        font-weight: bold;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .footer-bottom {
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+
+        .copyright {
+            flex: 1;
+        }
+
+        .social {
+            display: flex;
+            flex: 2;
+            justify-content: center;
+
+            li {
+                list-style: none;
+                margin: 0px 10px;
+                font-size: 1.5rem;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+
+        .language {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            flex: 1;
+            justify-content: flex-end;
+
+            .country {
+                margin-right: 10px;
+                text-transform: uppercase;
+            }
+
+            .flag {
+                img {
+                    height: 25px;
+                }
+            }
+        }
+    }
+}

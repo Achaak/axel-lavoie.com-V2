@@ -1,0 +1,93 @@
+@import '../../main/scss/colors';
+
+$main-color: #FF4136;
+
+// OTHER BLOCK
+nav#header {
+    ul.link {
+        li.visible {
+            border-bottom-color: $main-color;
+        }
+    }
+}
+
+section#contact {
+    form#contact-form {
+        button {
+            background-color: $main-color;
+        }
+    }
+}
+// END OTHER BLOCK
+
+#slider {
+    height: calc(100vh - 50px);
+}
+    
+#skills {
+    .skills-ctner {
+        position: relative;
+        overflow: hidden;
+        max-height: 80vh;
+
+        &.close:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 100px;
+            bottom: 0;
+            /* Use your background color, assuming white: */
+            background-image: linear-gradient(to top, #eff0f2, rgba(255,255,255,0));
+        }
+
+        .skills {
+            h3 {
+                width: 100%;
+                color: $dark-grey;
+                border-bottom: 1px solid $dark-grey;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            .circle-bar {
+                margin: 25px;
+            }
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .unwinder {
+            position: absolute;
+            bottom: 0;
+            background-color: $main-color;
+            left: 50%;
+            transform: translate3d(-50%,0,0);
+            cursor: pointer;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 7px;
+            z-index: 3;
+            border-radius: 5px 5px 0 0;
+            box-shadow: 0 0 10px -3px black;
+            width: 160px;
+            text-align: center;
+        }
+    }
+}
+
+#projects {
+    .projects-ctner {
+
+    }
+}
+
+
+#components {
+    .components-ctner {
+
+    }
+}

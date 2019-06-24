@@ -25,6 +25,10 @@ exports.getOpts = function(_global) {
                     name: "Projects",
                 },
                 {
+                    id: "components",
+                    name: "Components"
+                },
+                {
                     id: "contact",
                     name: "Contact"
                 }
