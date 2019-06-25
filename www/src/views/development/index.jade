@@ -1,6 +1,35 @@
+include ../blocks/modal-project/index.jade
+include ../blocks/modal-component/index.jade
+
 section#slider
+    .slider-ctner
+
+    .text-ctner
+        h1 Axel Lavoie
+        span.job Web developper
+
+        .btns
+            a.btn.btn-github(href="https://github.com/Achaak")
+                i(class="fab fa-github")
+                span Github
+
+            a.btn.btn-linkedin(href="https://fr.linkedin.com/in/axellavoie")
+                i(class="fab fa-linkedin-in")
+                span Linkedin
+
+section#projects.grid-container.full
     .grid-x.grid-padding-x
-        .large-12.cell
+        .large-10.large-offset-1.cell
+            h2 Projects
+
+            .projects-ctner.block-ctner.grid-x.grid-padding-x
+
+section#components.grid-container.full
+    .grid-x.grid-padding-x
+        .large-10.large-offset-1.cell
+            h2 Components
+
+            .components-ctner.block-ctner
 
 section#skills.grid-container.full
     .grid-x.grid-padding-x
@@ -9,19 +38,5 @@ section#skills.grid-container.full
 
             .skills-ctner.block-ctner.close
                 .unwinder More
-
-section#projects.grid-container.full
-    .grid-x.grid-padding-x
-        .large-10.large-offset-1.cell
-            h2 Projects
-
-            .projects-ctner.block-ctner
-
-section#components.grid-container.full
-    .grid-x.grid-padding-x
-        .large-10.large-offset-1.cell
-            h2 Components
-
-            .components-ctner.block-ctner
         
 include ../blocks/contact/index.jade

@@ -3,8 +3,18 @@
 .contact-ctner {
     background-color: #eff0f2;
     padding: 50px 70px;
+    position: relative;
+
+    .visible {
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transition: opacity 300ms;
+    }
 
     form#contact-form {
+        opacity: 0;
+        pointer-events: none;
+
         .input-ctner {
             position: relative;
             margin-bottom: 25px;
@@ -55,6 +65,32 @@
             color: white;
             font-weight: bold;
             text-transform: uppercase;
+            background-color: $red;
+        }
+    }
+
+    .done, .loading {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+        flex-direction: column;
+
+        span {
+            margin-top: 10px;
+        }
+    }
+
+    .done {
+        i {
+            font-size: 4rem;
+            color: $green;
         }
     }
 }

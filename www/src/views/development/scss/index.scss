@@ -1,28 +1,10 @@
 @import '../../main/scss/colors';
 
-$main-color: #FF4136;
+$main-color: $red;
 
 // OTHER BLOCK
-nav#header {
-    ul.link {
-        li.visible {
-            border-bottom-color: $main-color;
-        }
-    }
-}
 
-section#contact {
-    form#contact-form {
-        button {
-            background-color: $main-color;
-        }
-    }
-}
 // END OTHER BLOCK
-
-#slider {
-    height: calc(100vh - 50px);
-}
     
 #skills {
     .skills-ctner {
@@ -81,7 +63,78 @@ section#contact {
 
 #projects {
     .projects-ctner {
+        .project {
+            height: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 20px;
+            border: 5px solid white;
+            position: relative;
 
+            .name {
+                bottom: 0;
+                position: absolute;
+                left: 0;
+                right: 0;
+                background-color: #ffffff91;
+                font-weight: bold;
+                color: #171717;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .btn-ctner {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 45px;
+                right: 0;
+
+                .view-btn {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate3d(-50%,-50%,0);
+                    background-color: $main-color;
+                    color: white;
+                    font-weight: bold;
+                    padding: 10px 20px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    pointer-events: none;
+                    opacity: 0;
+                    transition: all 300ms;
+                    white-space: nowrap;
+                }
+            }
+            
+            &:hover {
+                .view-btn {
+                    pointer-events: auto;
+                    opacity: 1;
+                }
+            }
+
+            &.more {
+                background-color: $main-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: white;
+                cursor: pointer;
+                text-decoration: none;
+                transition: all 300ms;
+
+                &:hover {
+                    font-size: 1.3rem;
+                }
+            }
+        }
     }
 }
 

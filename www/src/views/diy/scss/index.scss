@@ -1,0 +1,38 @@
+@import '../../main/scss/colors';
+
+$main-color: #2ECC40;
+
+// OTHER BLOCK
+nav#header {
+    ul.link {
+        li.visible {
+            border-bottom-color: $main-color !important;
+        }
+    }
+}
+
+nav#burger-menu {
+    .link-important, .link-other {
+        li {
+            &:hover, &.active {
+                border-right-color: $main-color !important;
+            }
+        }
+    }
+}
+
+section#contact {
+    form#contact-form {
+        button {
+            background-color: $main-color !important;
+        }
+    }
+}
+.lds-roller {
+    div {
+        &:after {
+            background: $main-color !important;
+        }
+    }
+}
+// END OTHER BLOCK

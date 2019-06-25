@@ -21,6 +21,12 @@ nav#header {
 
         ul.burger {
             cursor: pointer;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
             &:hover {
                 li {
@@ -29,12 +35,12 @@ nav#header {
             }
             
             li {
-                background-color: $dark-grey;
+                background-color: #171717;
                 height: 3px;
-                width: 30px;
-                margin: 5px 0;
+                width: 100%;
+                margin: 3px 0;
                 list-style: none;
-                transition: margin 150ms;
+                transition: margin 100ms;
             }
         }
 
@@ -46,6 +52,7 @@ nav#header {
                 font-family: 'Roboto', sans-serif;
                 text-decoration: none;
                 color: $dark-grey;
+                font-size: 1.6rem;
             }
         }
     }
@@ -66,12 +73,14 @@ nav#header {
             &.visible {
                 border-bottom-width: 3px;
                 border-bottom-style: solid;
+                border-bottom-color: $red;
             }
             
             a {
                 font-family: 'Roboto-Medium', sans-serif;
                 text-decoration: none;
                 color: $dark-grey;
+                font-size: 0.9rem;
             }
         }
     }

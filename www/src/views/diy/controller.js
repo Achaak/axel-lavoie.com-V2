@@ -1,7 +1,7 @@
 exports.getOpts = function(_global) {
     var opts = {
         route: "/DIY",
-        title: "test",
+        title: "D.I.Y. | Axel Lavoie",
         description: "Hello world",
         //hrefIcon   : "",
 
@@ -14,7 +14,7 @@ exports.getOpts = function(_global) {
         //    url        : ""
         //}
 
-        navBurger: {
+        navHeader: {
             en: [
                 {
                     id: "projects",

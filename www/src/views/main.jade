@@ -12,6 +12,9 @@ html
         link(rel="stylesheet" type="text/css" href="/build/views/blocks/footer/product.min.css")
         link(rel="stylesheet" type="text/css" href="/build/views/blocks/contact/product.min.css")
 
+        each el in opts.css
+            link(rel="stylesheet" type="text/css" href="#{el}")
+
         // META
         meta(charset='utf-8')
         meta(name='description', content='"#{opts.description}')
@@ -44,7 +47,11 @@ html
         script(src="#{opts.pathJS}")
         script(src="/reload/reload.js")
         script(src="/socket.io/socket.io.js")
+        script(src="/build/views/main/product.min.js")
         script(src="/build/views/blocks/nav-burger/product.min.js")
         script(src="/build/views/blocks/nav-header/product.min.js")
         script(src="/build/views/blocks/contact/product.min.js")
         script(src="/build/views/blocks/footer/product.min.js")
+
+        each el in opts.js
+            script(src="#{el}")

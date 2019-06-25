@@ -6,7 +6,7 @@ exports.getParams = function(_global, _callback) {
         pageContent: {
             title      : "Title",
             description: "Hello world",
-            hrefIcon   : "",
+            hrefIcon   : "/ressources/images/logo/logo.png",
     
             // Open Graph
             openGraph : {

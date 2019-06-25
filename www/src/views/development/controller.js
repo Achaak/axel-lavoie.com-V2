@@ -1,7 +1,7 @@
 exports.getOpts = function(_global) {
     var opts = {
         route: "/",
-        title: "test",
+        title: "Development | Axel Lavoie",
         description: "Hello world",
         //hrefIcon   : "",
 
@@ -14,12 +14,8 @@ exports.getOpts = function(_global) {
         //    url        : ""
         //}
 
-        navBurger: {
+        navHeader: {
             en: [
-                {
-                    id: "skills",
-                    name: "Skills",
-                },
                 {
                     id: "projects",
                     name: "Projects",
@@ -29,11 +25,24 @@ exports.getOpts = function(_global) {
                     name: "Components"
                 },
                 {
+                    id: "skills",
+                    name: "Skills",
+                },
+                {
                     id: "contact",
                     name: "Contact"
                 }
             ]
-        }
+        },
+
+        js: [
+            "/build/views/blocks/modal-project/product.min.js",
+            "/build/views/blocks/modal-component/product.min.js"
+        ],
+
+        css: [
+
+        ]
     };
 
     return opts;

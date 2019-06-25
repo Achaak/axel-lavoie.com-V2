@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    var test = Slider().init(
-        "#slider", 
+    Slider().init(
+        ".slider-ctner", 
         [
             {
                 "url": 

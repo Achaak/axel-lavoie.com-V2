@@ -3,15 +3,20 @@ nav#burger-menu
         ul.close
             li
             li
+        h1
+            a(href="/") Axel Lavoie
+                //img(src="/ressources/images/logo/logo.png")
 
         ul.link-important
-            li
-             a(href="/") Development
+            li(data-id="development")
+                a(href="/") Development
+
+        .separator
         
         ul.link-other
-            li
+            li(data-id="photography")
                 a(href="/photography") Photography
-            li
+            li(data-id="diy")
                 a(href="/DIY") DIY
 
     .pictures

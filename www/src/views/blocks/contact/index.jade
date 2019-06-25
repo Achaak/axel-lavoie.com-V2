@@ -4,7 +4,7 @@ section#contact.grid-container.full
             h2 Contact
 
             .contact-ctner.block-ctner
-                form#contact-form
+                form#contact-form.visible
                     .input-ctner
                         input(type="text" id="contact-name" required)
                         label.input-title(for="contact-name") Votre nom/entreprise
@@ -16,3 +16,20 @@ section#contact.grid-container.full
                     textarea(id="contact-text" required)
                     
                     button(type="submit" id="contact-submit" form="contact-form") Envoyer
+
+                .loading
+                    .lds-roller
+                        div
+                        div
+                        div
+                        div
+                        div
+                        div
+                        div
+                        div
+                    
+                    span Loading...
+
+                .done
+                    i.fas.fa-check
+                    span The message has been sent !

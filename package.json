@@ -8,8 +8,7 @@
     "email": "axel.lavoie@gmail.com"
   },
   "scripts": {
-    "start": "nodemon --config ./nodemon.json daemon.js",
-    "scss": "node-sass -watch scss -o css"
+    "start": "nodemon --config ./nodemon.json daemon.js"
   },
   "dependencies": {
     "colors": "^1.3.3",
