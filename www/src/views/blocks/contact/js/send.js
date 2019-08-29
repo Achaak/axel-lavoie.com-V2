@@ -20,7 +20,7 @@ $(document).ready(function() {
     });
 
     
-    socket.on('mail', function (_data) {
+    socket.on('mail:sended', function (_data) {
         // Display loading
         $('.contact-ctner').children().removeClass("visible");
         $('.contact-ctner .done').addClass("visible");

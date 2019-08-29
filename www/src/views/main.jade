@@ -6,14 +6,16 @@ html
         // CSS
         link(rel="stylesheet" type="text/css" href="#{opts.pathCSS}")
         link(rel="stylesheet" type="text/css" href="/build/components.min.css")
+        link(rel="stylesheet" type="text/css" href="/build/views/blocks/loading-page/product.min.css")
         link(rel="stylesheet" type="text/css" href="/build/views/main/product.min.css")
         link(rel="stylesheet" type="text/css" href="/build/views/blocks/nav-header/product.min.css")
         link(rel="stylesheet" type="text/css" href="/build/views/blocks/nav-burger/product.min.css")
         link(rel="stylesheet" type="text/css" href="/build/views/blocks/footer/product.min.css")
         link(rel="stylesheet" type="text/css" href="/build/views/blocks/contact/product.min.css")
 
-        each el in opts.css
-            link(rel="stylesheet" type="text/css" href="#{el}")
+        if opts.css
+            each el in opts.css
+                link(rel="stylesheet" type="text/css" href="#{el}")
 
         // META
         meta(charset='utf-8')
@@ -33,6 +35,8 @@ html
         meta(property="og:url"         content="#{opts.openGraph.url}")
 
     body
+        include blocks/loading-page/index.jade
+
         include blocks/nav-header/index.jade
 
         include blocks/nav-burger/index.jade
@@ -48,10 +52,12 @@ html
         script(src="/reload/reload.js")
         script(src="/socket.io/socket.io.js")
         script(src="/build/views/main/product.min.js")
+        script(src="/build/views/blocks/loading-page/product.min.js")
         script(src="/build/views/blocks/nav-burger/product.min.js")
         script(src="/build/views/blocks/nav-header/product.min.js")
         script(src="/build/views/blocks/contact/product.min.js")
         script(src="/build/views/blocks/footer/product.min.js")
 
-        each el in opts.js
-            script(src="#{el}")
+        if opts.js
+            each el in opts.js
+                script(src="#{el}")

@@ -9,9 +9,11 @@ nav#burger-menu {
     pointer-events: none;
     z-index: 20;
     overflow: hidden;
+    opacity: 0;
 
     &.show {
         pointer-events: auto;
+        opacity: 1;
 
         .link {
             left: 0;

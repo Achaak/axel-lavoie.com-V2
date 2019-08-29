@@ -10,7 +10,7 @@ exports.initMailer = function(_global, _callback) {
             // If has from, name and text send mail
             if (_data.from && _data.name && _data.text) {
                 sendMail(_data.from, _data.name, _data.text, function(_error) {
-                    socket.emit('mail', { error: _error });
+                    socket.emit('mail:sended', { error: _error });
                 });
             }
         });

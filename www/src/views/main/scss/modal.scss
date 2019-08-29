@@ -29,16 +29,28 @@
             position: relative;
             max-width: 100%;
             min-width: 300px;
-            max-height: 100vh;
-            overflow-y: auto;
+            max-height: 95vh;
 
-            .title {
+            .infos {
+                overflow-y: hidden;
+                max-height: 80vh;
+            }
+
+            h4 {
                 font-weight: bold;
                 text-transform: uppercase;
                 width: 100%;
                 border-bottom: 1px solid darkgrey;
-                padding: 0 15px 15px 15px;
+                padding: 0 15px 0 0;
                 font-size: 1.3rem;
+            }
+
+            h5 {
+                border-bottom: 1px solid grey;
+                font-size: 1rem;
+                padding: 5px 0 5px 0;
+                margin-top: 15px;
+                margin-bottom: 5px;
             }
 
             .close {

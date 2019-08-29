@@ -98,6 +98,12 @@ nav#header {
             i {
                 color: $dark-grey;
                 font-size: 1.2rem;
+
+                &.icon-svg:before {
+                    background-color: $dark-grey;
+                    height: 1.2rem;
+                    width: 1.2rem;
+                }
             }
         }
     }

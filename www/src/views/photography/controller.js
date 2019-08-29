@@ -1,6 +1,6 @@
 exports.getOpts = function(_global) {
     var opts = {
-        route: "/photography",
+        route: "/photography/.*",
         title: "Photography | Axel Lavoie",
         description: "Hello world",
         //hrefIcon   : "",
@@ -17,8 +17,8 @@ exports.getOpts = function(_global) {
         navHeader: {
             en: [
                 {
-                    id: "photos",
-                    name: "Photos",
+                    id: "albums",
+                    name: "Albums"
                 },
                 {
                     id: "contact",

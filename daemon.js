@@ -69,13 +69,18 @@ function startServer() {
         () => console.log(("[SERVER]      -- Server is started to "+port+" ! --").green)
     );
     
-    // Initialize the mailer
+    // Require Socket.io
     global.socketIo   = require("socket.io").listen(global.server);
+
+    // Initialize the mailer
     global.nodemailer = require('nodemailer');
     global.mailer     = require("./mixins/mailer.js");
-
-    // Require Socket.io
     global.mailer = global.mailer.initMailer(global);
+
+    // Initialize picture-tree
+    global.pictureTree = require("./mixins/picture-tree.js");
+    global.pictureTree = global.pictureTree.initPictureTree(global);
+
 
     global.reload(global.app);
 }

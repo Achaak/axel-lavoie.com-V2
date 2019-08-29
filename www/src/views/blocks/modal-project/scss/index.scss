@@ -1,0 +1,84 @@
+@import '../../../main/scss/colors';
+
+#modal-project {
+    .slider {
+        margin: 20px 0;
+    }
+
+
+    .github {
+        display: flex;
+        flex-direction: row-reverse;
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #474747;
+            padding: 10px 20px;
+            display: block;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 1.3rem;
+            }
+
+            span {
+                margin-left: 10px;
+            }
+        }
+    }
+
+
+    .languages-ctner {
+        display: flex;
+        flex-wrap: wrap;
+
+        .language {
+            background-color: $red;
+            color: white;
+            margin: 5px 10px 5px 0;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+    }
+
+
+    .link {
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: $blue;
+        }
+    }
+
+
+    .society-ctner {
+        display: flex;
+
+        .society {
+            font-weight: bold;
+        }
+
+        .society_website {
+            margin-left: 10px;
+
+            a {
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+    }
+
+
+    .description-ctner {
+        .sentence {
+            width: 100%;
+        }
+    }
+}

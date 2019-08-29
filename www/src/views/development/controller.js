@@ -21,8 +21,8 @@ exports.getOpts = function(_global) {
                     name: "Projects",
                 },
                 {
-                    id: "components",
-                    name: "Components"
+                    id: "repositories",
+                    name: "Repositories"
                 },
                 {
                     id: "skills",
@@ -37,11 +37,12 @@ exports.getOpts = function(_global) {
 
         js: [
             "/build/views/blocks/modal-project/product.min.js",
-            "/build/views/blocks/modal-component/product.min.js"
+            "/build/views/blocks/modal-repository/product.min.js"
         ],
 
         css: [
-
+            "/build/views/blocks/modal-project/product.min.css",
+            "/build/views/blocks/modal-repository/product.min.css"
         ]
     };
 

@@ -1,5 +1,5 @@
 include ../blocks/modal-project/index.jade
-include ../blocks/modal-component/index.jade
+include ../blocks/modal-repository/index.jade
 
 section#slider
     .slider-ctner
@@ -17,6 +17,10 @@ section#slider
                 i(class="fab fa-linkedin-in")
                 span Linkedin
 
+            a.btn.btn-malt(href="https://www.malt.fr/profile/axellavoie")
+                i(class="icon-svg icon-malt")
+                span Malt
+
 section#projects.grid-container.full
     .grid-x.grid-padding-x
         .large-10.large-offset-1.cell
@@ -24,12 +28,12 @@ section#projects.grid-container.full
 
             .projects-ctner.block-ctner.grid-x.grid-padding-x
 
-section#components.grid-container.full
+section#repositories.grid-container.full
     .grid-x.grid-padding-x
         .large-10.large-offset-1.cell
-            h2 Components
+            h2 Repositories
 
-            .components-ctner.block-ctner
+            .repositories-ctner.block-ctner.grid-x.grid-padding-x
 
 section#skills.grid-container.full
     .grid-x.grid-padding-x
