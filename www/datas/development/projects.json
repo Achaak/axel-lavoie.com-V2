@@ -2,20 +2,17 @@
     {
         "pictures": [
             {
-                "url": "https://axel-lavoie.com/view/pictures/projects/projet_rrg_1.png"
+                "url": "/ressources/projects/project_rrg/projet_rrg_1.png"
             },
             {
-                "url": "https://axel-lavoie.com/view/pictures/projects/projet_rrg_2.png"
+                "url": "/ressources/projects/project_rrg/projet_rrg_2.png"
             }
         ],
-        "link": "",
 
         "society": "RRG",
-        "society_website": "",
+        "society_website": "https://www.renault-retail-group.fr/",
 
-        "github": "https://www.arcadeandco.fr/",
-
-        "name": "Site GMAO",
+        "name": "Site de GMAO",
         "small_description": [
             "Création d'un site de gestion du matériel de l'établissement."
         ],
@@ -37,289 +34,86 @@
     {
         "pictures": [
             {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co.png"
+                "url": "/ressources/projects/portfolio/portfolio.png"
             },
             {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co_devis.png"
+                "url": "/ressources/projects/portfolio/portfolio2.png"
+            },
+            {
+                "url": "/ressources/projects/portfolio/portfolio3.png"
             }
         ],
-        "link": "https://www.arcadeandco.fr/",
+        "link": "https://axel-lavoie.com",
 
-        "society": "Arcade&co",
-        "society_website": "https://www.arcadeandco.fr/",
+        "github": "https://github.com/Achaak/axel-lavoie.com-V1",
 
-        "github": "https://www.arcadeandco.fr/",
-
-        "name": "Création de module",
+        "name": "axel-lavoie.com V1",
         "small_description": [
-            "Développement de module sur le site web de l'entreprise."
+            "The first version of my website"
         ],
-        "description": [
-            "Dans le cadre d'un stage pour la validation de mon DUT Informatique, il m’a été demandé de créer des modules pour le site d’Arcade&Co. Cela allant d’un simple ajout d’option pour les produits, à la réalisation d’un nouveau système de payant en ligne ou au développement d’un gestionnaire de devis."
-        ],
-
+        
         "languages" :[
             "PHP",
             "MySQL",
             "Javascript",
             "JQuery"
         ],
-        "value": 100
+        "value": 30
     },
     {
         "pictures": [
             {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co.png"
+                "url": "/ressources/projects/swrate/swrate.png"
             },
             {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co_devis.png"
+                "url": "/ressources/projects/swrate/swrate2.png"
             }
         ],
-        "link": "https://www.arcadeandco.fr/",
+        "link": "https://swrate.com",
 
-        "society": "Arcade&co",
-        "society_website": "https://www.arcadeandco.fr/",
+        "github": "https://github.com/Achaak/How-is-my-rune",
 
-        "github": "https://www.arcadeandco.fr/",
-
-        "name": "Création de module",
+        "name": "SWRate",
         "small_description": [
-            "Développement de module sur le site web de l'entreprise."
+            "Réalisation d'un site de gestion de rune pour le jeu Summoners War"
         ],
-        "description": [
-            "Dans le cadre d'un stage pour la validation de mon DUT Informatique, il m’a été demandé de créer des modules pour le site d’Arcade&Co. Cela allant d’un simple ajout d’option pour les produits, à la réalisation d’un nouveau système de payant en ligne ou au développement d’un gestionnaire de devis."
-        ],
-
+        
         "languages" :[
             "PHP",
-            "MySQL",
             "Javascript",
             "JQuery"
         ],
-        "value": 100
+        "value": 30
     },
     {
         "pictures": [
             {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co.png"
+                "url": "/ressources/projects/arcadeAndCo/arcade&co.png"
             },
             {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co_devis.png"
+                "url": "/ressources/projects/arcadeAndCo/arcade&co.png"
             }
         ],
         "link": "https://www.arcadeandco.fr/",
 
-        "society": "Arcade&co",
+        "society": "Arcade&Co",
         "society_website": "https://www.arcadeandco.fr/",
 
-        "github": "https://www.arcadeandco.fr/",
-
-        "name": "Création de module",
+        "name": "Arcade&Co",
         "small_description": [
             "Développement de module sur le site web de l'entreprise."
         ],
+
         "description": [
             "Dans le cadre d'un stage pour la validation de mon DUT Informatique, il m’a été demandé de créer des modules pour le site d’Arcade&Co. Cela allant d’un simple ajout d’option pour les produits, à la réalisation d’un nouveau système de payant en ligne ou au développement d’un gestionnaire de devis."
         ],
-
+        
         "languages" :[
             "PHP",
             "MySQL",
             "Javascript",
             "JQuery"
         ],
-        "value": 100
-    },
-    {
-        "pictures": [
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co.png"
-            },
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co_devis.png"
-            }
-        ],
-        "link": "https://www.arcadeandco.fr/",
-
-        "society": "Arcade&co",
-        "society_website": "https://www.arcadeandco.fr/",
-
-        "github": "https://www.arcadeandco.fr/",
-
-        "name": "Création de module",
-        "small_description": [
-            "Développement de module sur le site web de l'entreprise."
-        ],
-        "description": [
-            "Dans le cadre d'un stage pour la validation de mon DUT Informatique, il m’a été demandé de créer des modules pour le site d’Arcade&Co. Cela allant d’un simple ajout d’option pour les produits, à la réalisation d’un nouveau système de payant en ligne ou au développement d’un gestionnaire de devis."
-        ],
-
-        "languages" :[
-            "PHP",
-            "MySQL",
-            "Javascript",
-            "JQuery"
-        ],
-        "value": 100
-    },
-    {
-        "pictures": [
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co.png"
-            },
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co_devis.png"
-            }
-        ],
-        "link": "https://www.arcadeandco.fr/",
-
-        "society": "Arcade&co",
-        "society_website": "https://www.arcadeandco.fr/",
-
-        "github": "https://www.arcadeandco.fr/",
-
-        "name": "Création de module",
-        "small_description": [
-            "Développement de module sur le site web de l'entreprise."
-        ],
-        "description": [
-            "Dans le cadre d'un stage pour la validation de mon DUT Informatique, il m’a été demandé de créer des modules pour le site d’Arcade&Co. Cela allant d’un simple ajout d’option pour les produits, à la réalisation d’un nouveau système de payant en ligne ou au développement d’un gestionnaire de devis."
-        ],
-
-        "languages" :[
-            "PHP",
-            "MySQL",
-            "Javascript",
-            "JQuery"
-        ],
-        "value": 100
-    },
-    {
-        "pictures": [
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co.png"
-            },
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co_devis.png"
-            }
-        ],
-        "link": "https://www.arcadeandco.fr/",
-
-        "society": "Arcade&co",
-        "society_website": "https://www.arcadeandco.fr/",
-
-        "github": "https://www.arcadeandco.fr/",
-
-        "name": "Création de module",
-        "small_description": [
-            "Développement de module sur le site web de l'entreprise."
-        ],
-        "description": [
-            "Dans le cadre d'un stage pour la validation de mon DUT Informatique, il m’a été demandé de créer des modules pour le site d’Arcade&Co. Cela allant d’un simple ajout d’option pour les produits, à la réalisation d’un nouveau système de payant en ligne ou au développement d’un gestionnaire de devis."
-        ],
-
-        "languages" :[
-            "PHP",
-            "MySQL",
-            "Javascript",
-            "JQuery"
-        ],
-        "value": 100
-    },
-    {
-        "pictures": [
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co.png"
-            },
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co_devis.png"
-            }
-        ],
-        "link": "https://www.arcadeandco.fr/",
-
-        "society": "Arcade&co",
-        "society_website": "https://www.arcadeandco.fr/",
-
-        "github": "https://www.arcadeandco.fr/",
-
-        "name": "Création de module",
-        "small_description": [
-            "Développement de module sur le site web de l'entreprise."
-        ],
-        "description": [
-            "Dans le cadre d'un stage pour la validation de mon DUT Informatique, il m’a été demandé de créer des modules pour le site d’Arcade&Co. Cela allant d’un simple ajout d’option pour les produits, à la réalisation d’un nouveau système de payant en ligne ou au développement d’un gestionnaire de devis."
-        ],
-
-        "languages" :[
-            "PHP",
-            "MySQL",
-            "Javascript",
-            "JQuery"
-        ],
-        "value": 100
-    },
-    {
-        "pictures": [
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co.png"
-            },
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co_devis.png"
-            }
-        ],
-        "link": "https://www.arcadeandco.fr/",
-
-        "society": "Arcade&co",
-        "society_website": "https://www.arcadeandco.fr/",
-
-        "github": "https://www.arcadeandco.fr/",
-
-        "name": "Création de module",
-        "small_description": [
-            "Développement de module sur le site web de l'entreprise."
-        ],
-        "description": [
-            "Dans le cadre d'un stage pour la validation de mon DUT Informatique, il m’a été demandé de créer des modules pour le site d’Arcade&Co. Cela allant d’un simple ajout d’option pour les produits, à la réalisation d’un nouveau système de payant en ligne ou au développement d’un gestionnaire de devis."
-        ],
-
-        "languages" :[
-            "PHP",
-            "MySQL",
-            "Javascript",
-            "JQuery"
-        ],
-        "value": 100
-    },
-    {
-        "pictures": [
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co.png"
-            },
-            {
-                "url": "https://axel-lavoie.com/view/pictures/projects/arcade&co_devis.png"
-            }
-        ],
-        "link": "https://www.arcadeandco.fr/",
-
-        "society": "Arcade&co",
-        "society_website": "https://www.arcadeandco.fr/",
-
-        "github": "https://www.arcadeandco.fr/",
-
-        "name": "Création de module",
-        "small_description": [
-            "Développement de module sur le site web de l'entreprise."
-        ],
-        "description": [
-            "Dans le cadre d'un stage pour la validation de mon DUT Informatique, il m’a été demandé de créer des modules pour le site d’Arcade&Co. Cela allant d’un simple ajout d’option pour les produits, à la réalisation d’un nouveau système de payant en ligne ou au développement d’un gestionnaire de devis."
-        ],
-
-        "languages" :[
-            "PHP",
-            "MySQL",
-            "Javascript",
-            "JQuery"
-        ],
-        "value": 100
+        "value": 20
     }
 ]
