@@ -7,9 +7,9 @@
     z-index: 15;
     transition: opacity 300ms;
 
-    &.hidden {
-        opacity: 0;
-        pointer-events: none;
+    &.hidden, &.hidden * {
+        opacity: 0 !important;
+        pointer-events: none !important;
     }
 
     .modal-bg {

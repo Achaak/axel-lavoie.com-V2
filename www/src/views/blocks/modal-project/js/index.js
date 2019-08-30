@@ -4,7 +4,6 @@ function setProjectModal(_project) {
 
     // Set project name
     _modal.find("h4").html(_project.name);
-    console.log(_project);
 
     // Set slider
     Slider().init(

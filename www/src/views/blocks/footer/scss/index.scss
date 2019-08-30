@@ -9,14 +9,19 @@ footer {
         background-color: #252a2c;
         display: flex;
         padding: 30px 100px;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1023px) {
+            padding: 30px;
+        }
 
         .title {
             text-transform: uppercase;
             font-weight: bold;
+            margin-right: 5%;
         }
         
         .contact {
-            margin-left: 40px;
             display: flex;
 
             a {
@@ -34,9 +39,17 @@ footer {
         padding: 60px 100px;
         font-weight: bold;
 
+        @media screen and (max-width: 1023px) {
+            padding: 30px;
+        }
+
         a {
             color: white;
             text-decoration: none;
+        }
+
+        @media screen and (max-width: 1023px) {
+            padding: 30px;
         }
     }
 
@@ -47,6 +60,18 @@ footer {
         align-items: center;
         font-size: 0.8rem;
 
+        @media screen and (max-width: 1023px) {
+            padding: 30px;
+        }
+
+        @media screen and (max-width: 599px) {
+            flex-direction: column;
+
+            .copyright, .social, .language {
+                margin: 10px 0;
+            }
+        }
+
         .copyright {
             flex: 1;
         }
@@ -55,6 +80,7 @@ footer {
             display: flex;
             flex: 2;
             justify-content: center;
+            flex-wrap: wrap;
 
             li {
                 list-style: none;

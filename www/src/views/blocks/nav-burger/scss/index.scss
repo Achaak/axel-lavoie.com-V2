@@ -10,10 +10,12 @@ nav#burger-menu {
     z-index: 20;
     overflow: hidden;
     opacity: 0;
+    transition: opacity 0s 1s;
 
     &.show {
         pointer-events: auto;
         opacity: 1;
+        transition: opacity 0s;
 
         .link {
             left: 0;
@@ -38,6 +40,10 @@ nav#burger-menu {
         background-color: #eff0f2;
 
         transition: left 1s;
+
+        @media screen and (max-width: 1023px) {
+            width: 100%;
+        }
 
         ul {
             li {
@@ -136,6 +142,10 @@ nav#burger-menu {
         bottom: 0;
         right: -100%;
         width: 70%;
+
+        @media screen and (max-width: 1023px) {
+            display: none;
+        }
 
         background-color: white;
 

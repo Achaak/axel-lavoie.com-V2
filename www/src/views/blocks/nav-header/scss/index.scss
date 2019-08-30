@@ -47,12 +47,23 @@ nav#header {
         h1 {
             margin: 0;
             margin-left: 30px;
+            font-size: 1.6rem;
 
             a{
                 font-family: 'Roboto', sans-serif;
                 text-decoration: none;
                 color: $dark-grey;
                 font-size: 1.6rem;
+            }
+            
+            @media screen and (max-width: 499px) {
+                & {
+                    font-size: 1rem;
+
+                    a {
+                        font-size: 1rem;
+                    }
+                }
             }
         }
     }
@@ -61,6 +72,12 @@ nav#header {
         display: flex;
         justify-content: center;
         flex: 2;
+
+        @media screen and (max-width: 949px) {
+            & {
+                display: none;
+            }
+         }
 
         li {
             list-style: none;
