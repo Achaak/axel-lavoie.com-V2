@@ -1,4 +1,5 @@
 /node_modules
-/www
 /datas
-/ressources/photography
+/www/build
+/www/ressources/photography
+/www/ressources/projects

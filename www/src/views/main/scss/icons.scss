@@ -1,0 +1,12 @@
+.icon-malt {
+    &:before {
+        content: "";
+        mask-image: url('/ressources/images/logo/malt.svg');
+        -webkit-mask-image: url('/ressources/images/logo/malt.svg');
+        background-size: cover;
+        height: 1.5rem;
+        width: 1.5rem;
+        display: block;
+        background-color: white;
+    }
+}

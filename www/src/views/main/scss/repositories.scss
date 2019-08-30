@@ -1,0 +1,107 @@
+@import 'colors';
+
+$main-color: $red;
+
+#repositories {
+    .repositories-ctner {
+        .large-4 {
+            display: flex;
+
+            .repository {
+                margin: 20px;
+                background-color: white;
+                padding: 20px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .name {
+                    text-decoration: none;
+                    color: $main-color;
+                    font-weight: bold;
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                    display: block;
+                }
+
+                .description {
+                    color: #586069;
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                    font-family: 'Roboto-Light',sans-serif;
+                }
+
+                .infos {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .language {
+                        color: #586069;
+                        font-size: 12px;
+                        display: flex;
+                        align-items: center;
+
+                        &:before {
+                            content: "";
+                            display: block;
+                            height: 12px;
+                            width: 12px;
+                            border-radius: 50%;
+                            margin-right: 5px;
+                        }
+                        
+                        &.JavaScript {
+                            &:before {
+                                background-color: $yellow
+                            }
+                        }
+                        
+                        &.HTML {
+                            &:before {
+                                background-color: $red
+                            }
+                        }
+                        
+                        &.CSS {
+                            &:before {
+                                background-color: $purple
+                            }
+                        }
+                        
+                        &.PHP {
+                            &:before {
+                                background-color: $marron
+                            }
+                        }
+                    }
+
+                    .pushed_at {
+                        color: #586069;
+                        font-size: 12px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 5%;
+                    }
+                }
+
+                &.more {
+                    background-color: $main-color;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: white;
+                    cursor: pointer;
+                    text-decoration: none;
+                    transition: all 300ms;
+    
+                    &:hover {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
