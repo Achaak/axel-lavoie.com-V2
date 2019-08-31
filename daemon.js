@@ -10,7 +10,7 @@ global.tools.create(global);
 
 global.params  = require("./mixins/params.js");
 
-global.http       = require('http');
+global.https       = require('https');
 global.fs         = require('fs');
 global.util       = require('util');
 global.asyncReadFile  = global.util.promisify(global.fs.readFile);
@@ -28,7 +28,7 @@ global.path       = require("path");
 global.reload     = require("reload");
 
 global.app    = global.express();
-global.server = global.http.createServer(global.app);
+global.server = global.https.createServer(global.app);
 
 
 
@@ -62,7 +62,13 @@ async function prepareServer() {
 // Function to start the server
 function startServer() {
     // Create the server
-    global.server = global.http.createServer(global.app);
+    global.server = global.https.createServer(
+        {
+            key: global.fs.readFileSync('key.pem'),
+            cert: global.fs.readFileSync('cert.pem')
+        },
+        global.app
+    );
 
     global.server.listen(
         port, 
