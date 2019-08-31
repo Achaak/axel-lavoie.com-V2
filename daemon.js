@@ -1,6 +1,6 @@
 var global = {};
 
-var port = 8081;
+var port = 8080;
 
 global.builder = require("./mixins/builder.js");
 global.routes  = require("./mixins/routes.js");
