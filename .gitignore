@@ -1,8 +1,6 @@
 /node_modules
 /datas
 /www/build
-/www/ressources/photography
-/www/ressources/projects
 /cert.pem
 /key.pem
 /package-lock.json
