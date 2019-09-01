@@ -49,7 +49,10 @@ html
         // Script JS
         script(src="/build/components.min.js")
         script(src="#{opts.pathJS}")
-        script(src="/reload/reload.js")
+
+        if !opts.prod
+            script(src="/reload/reload.js")
+            
         script(src="/socket.io/socket.io.js")
         script(src="https://www.googletagmanager.com/gtag/js?id=UA-121442833-1")
         script(src="/build/views/main/product.min.js")
