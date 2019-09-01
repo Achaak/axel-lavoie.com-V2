@@ -1,6 +1,4 @@
 /node_modules
 /datas
 /www/build
-/cert.pem
-/key.pem
 /package-lock.json
