@@ -1,7 +1,7 @@
 exports.getOpts = function(_global) {
     var opts = {
         route: "/photography/.*",
-        title: "Photography | Axel Lavoie",
+        title: "mPhotography | Axel Lavoie",
         description: "Hello world",
         //hrefIcon   : "",
 
