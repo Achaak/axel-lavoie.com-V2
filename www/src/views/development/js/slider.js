@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("test");
     // Init Slider
     Slider().init(
         ".slider-ctner",
