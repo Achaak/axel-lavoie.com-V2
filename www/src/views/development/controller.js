@@ -2,7 +2,7 @@ exports.getOpts = function(_global) {
     var opts = {
         route: "/",
         title: "Development | Axel Lavoie",
-        description: "Hello world",
+        description: "Portfolio d'Axel Lavoie, développeur web sur Rouen. Derniers projets et réalisations, compétences et moyen de contact. N'hésitez pas à visiter le site et à me contacter.",
         //hrefIcon   : "",
 
         // Open Graph
