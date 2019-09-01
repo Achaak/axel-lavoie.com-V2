@@ -1,6 +1,23 @@
 #slider {
     height: calc(100vh - 50px);
     position: relative;
+    overflow: hidden;
+
+    .picture {
+        animation-name: translationScaleSlider;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.39, 0.23, 0.62, 0.79);
+
+        @keyframes translationScaleSlider {
+            100%, 0%   {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    }
 
     .text-ctner {
         position: absolute;
