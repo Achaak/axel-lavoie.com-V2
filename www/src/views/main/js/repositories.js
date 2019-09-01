@@ -20,7 +20,7 @@ function initializerepositories(_repositories, _nbRepository) {
         _reposDOM.find(".language").append(_repos.language);
         _reposDOM.find(".language").addClass(_repos.language);
         var _updateDate = new Date(_repos.pushed_at);
-        _reposDOM.find(".pushed_at").append("Updated on " + _updateDate.getDay() + " " + _monthNames[_updateDate.getMonth()] + " " + _updateDate.getFullYear());
+        _reposDOM.find(".pushed_at").append("Updated on " + _updateDate.getDate() + " " + _monthNames[_updateDate.getMonth()] + " " + _updateDate.getFullYear());
 
         // Add repos on the DOM
         _compoCtnerDOM.append(_reposDOM);
