@@ -1,8 +1,16 @@
 @import '../../../main/scss/colors';
 
 #modal-project {
+    .modal-ctner {
+        min-width: 80%;
+    }
+    
     .slider {
         margin: 20px 0;
+    }
+
+    .infos {
+        overflow: auto;
     }
 
 
@@ -57,28 +65,42 @@
         }
     }
 
+    .society {
+        display: none;
 
-    .society-ctner {
-        display: flex;
-
-        .society {
-            font-weight: bold;
+        &.show {
+            display: block;
         }
 
-        .society_website {
-            margin-left: 10px;
+        .society-ctner {
+            display: flex;
 
-            a {
-                text-decoration: none;
-                color: $blue;
+            .society_name {
+                font-weight: bold;
+            }
+
+            .society_website {
+                margin-left: 10px;
+
+                a {
+                    text-decoration: none;
+                    color: $blue;
+                }
             }
         }
     }
 
+    .description {
+        display: none;
 
-    .description-ctner {
-        .sentence {
-            width: 100%;
+        &.show {
+            display: block;
+        }
+
+        .description-ctner {
+            .sentence {
+                width: 100%;
+            }
         }
     }
 }

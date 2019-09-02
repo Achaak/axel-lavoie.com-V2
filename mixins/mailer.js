@@ -23,7 +23,7 @@ exports.initMailer = function(_global, _callback) {
             from: _from,
             to: 'axel.lavoie@gmail.com',
             subject: 'Message from ' + _name,
-            text: _name + " | " + _text
+            text: _name + " | " + _from + " | " + _text
         };
         
         // Send the mail

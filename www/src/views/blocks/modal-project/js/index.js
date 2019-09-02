@@ -14,6 +14,11 @@ function setProjectModal(_project) {
 
 
     // Set description
+    if (_project.description)
+        _modal.find(".description").addClass("show");
+    else
+        _modal.find(".description").removeClass("show");
+
     _modal.find(".description-ctner").empty();
     if(_project.description) {
         for (var i = 0; i < _project.description.length; i++) {
@@ -32,15 +37,25 @@ function setProjectModal(_project) {
 
 
     // Set link
+    _modal.find(".link").empty();
     if(_project.link) _modal.find(".link").html("<a href='"+_project.link+"' target='_blank'>"+_project.link+"</a>");
 
+    // Prepare society
+    if (_project.society || _project.society_website)
+        _modal.find(".society").addClass("show");
+    else
+        _modal.find(".society").removeClass("show");
+
     // Set society
-    if(_project.society) _modal.find(".society").html(_project.society);
+    _modal.find(".society_name").empty();
+    if(_project.society) _modal.find(".society_name").html(_project.society);
 
     // Set society_website
+    _modal.find(".society_website").empty();
     if(_project.society_website) _modal.find(".society_website").html("<a href='"+_project.society_website+"' target='_blank'>"+_project.society_website+"</a>");
 
     // Set github
+    _modal.find(".github").empty();
     if(_project.github) _modal.find(".github").html("<a href='"+_project.github+"' target='_blank'><i class='fab fa-github'></i><span>Github</span></a>");
     
     

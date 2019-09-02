@@ -18,15 +18,15 @@ exports.getOpts = function(_global) {
             en: [
                 {
                     id: "projects",
-                    name: "Projects",
+                    name: "Projets",
                 },
                 {
                     id: "repositories",
-                    name: "Repositories"
+                    name: "Dépôts"
                 },
                 {
                     id: "skills",
-                    name: "Skills",
+                    name: "Compétences",
                 },
                 {
                     id: "contact",
@@ -36,13 +36,11 @@ exports.getOpts = function(_global) {
         },
 
         js: [
-            "/build/views/blocks/modal-project/product.min.js",
-            "/build/views/blocks/modal-repository/product.min.js"
+            "/build/views/blocks/modal-project/product.min.js"
         ],
 
         css: [
-            "/build/views/blocks/modal-project/product.min.css",
-            "/build/views/blocks/modal-repository/product.min.css"
+            "/build/views/blocks/modal-project/product.min.css"
         ]
     };
 

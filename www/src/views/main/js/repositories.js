@@ -28,7 +28,7 @@ function initializerepositories(_repositories, _nbRepository) {
 
     // If repositorie > 8
     if(_reposGithub.length > _nbRepository) {
-        _compoCtnerDOM.append("<div class='small-12 medium-6 large-4'><a href='/development/repositories' class='repository more'>And more</a></div>");
+        _compoCtnerDOM.append("<div class='small-12 medium-6 large-4'><a href='/development/repositories' class='repository more'>Et plus</a></div>");
 
     }
 }

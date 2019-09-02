@@ -7,11 +7,12 @@ $(document).ready(function() {
         _skills =_datas;
 
         var _categs = ["main", "secondary", "software", "os"]
+        var _categsFR = ["Principal", "Secondaire", "Logiciel", "OS"]
 
         for (var cptCateg = 0; cptCateg < _categs.length; cptCateg++) {
             var _categ = _categs[cptCateg];
 
-            var _categDOM = $("<div class='"+_categ+" skills'><h3>"+_categ+"</h3></div>")
+            var _categDOM = $("<div class='"+_categ+" skills'><h3>"+_categsFR[cptCateg]+"</h3></div>")
 
             _skillCtner.append(_categDOM);
 
