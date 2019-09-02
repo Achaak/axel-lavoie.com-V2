@@ -3,7 +3,7 @@ exports.initMailer = function(_global, _callback) {
 
     var mailLogsPath = global.path.join(__dirname, "../datas/mail-logs.json");
     var transporter = global.nodemailer.createTransport(JSON.parse(global.fs.readFileSync(mailLogsPath)));
-
+    
     global.socketIo.on('connection', function (socket) {
         
         socket.on('mail:send', function (_data) {
@@ -46,8 +46,8 @@ exports.initMailer = function(_global, _callback) {
     if (_callback) _callback();
 
     return {
-        "sendMail": function() {
-            sendMail();
+        "sendMail": function(_from, _name, _text, _callback) {
+            sendMail(_from, _name, _text, _callback);
         }
     };
 }
