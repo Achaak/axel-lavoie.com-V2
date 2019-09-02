@@ -2,6 +2,30 @@
     {
         "pictures": [
             {
+                "url": "/ressources/projects/my-website/my-website1.png"
+            },
+            {
+                "url": "/ressources/projects/my-website/my-website2.png"
+            }
+        ],
+        "link": "https://axel-lavoie.com/",
+
+        "name": "axel-lavoie.com V2",
+        "description": [
+            "Site personnel où vous trouverez mes derniers projets et réalisations, compétences et moyen de contact. N'hésitez pas à visiter le site et à me contacter pour toute demande de projet ou devis."
+        ],
+        
+        "languages" :[
+            "Javascript",
+            "NodeJS",
+            "JQuery",
+            "SocketIo"
+        ],
+        "value": 60
+    },
+    {
+        "pictures": [
+            {
                 "url": "/ressources/projects/project_rrg/projet_rrg_1.png"
             },
             {
