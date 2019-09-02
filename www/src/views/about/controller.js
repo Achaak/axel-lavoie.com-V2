@@ -1,8 +1,8 @@
 exports.getOpts = function(_global) {
     var opts = {
         route: "/about",
-        title: "About | Axel Lavoie",
-        description: "Hello world",
+        title: "À propos | Axel Lavoie",
+        //description: "Hello world",
         //hrefIcon   : "",
 
         // Open Graph

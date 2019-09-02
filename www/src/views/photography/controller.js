@@ -1,8 +1,8 @@
 exports.getOpts = function(_global) {
     var opts = {
         route: "/photography/.*",
-        title: "Photography | Axel Lavoie",
-        description: "Hello world",
+        title: "Photographie | Axel Lavoie",
+        //description: "Hello world",
         //hrefIcon   : "",
 
         // Open Graph

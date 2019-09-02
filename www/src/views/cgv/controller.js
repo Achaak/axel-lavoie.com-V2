@@ -2,7 +2,7 @@ exports.getOpts = function(_global) {
     var opts = {
         route: "/cgv",
         title: "CGV | Axel Lavoie",
-        description: "Hello world",
+        //description: "Hello world",
         //hrefIcon   : "",
 
         // Open Graph

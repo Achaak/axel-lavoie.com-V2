@@ -4,17 +4,17 @@ exports.getParams = function(_global, _callback) {
     _global.opts = {
         // Page contents
         pageContent: {
-            title      : "Title",
-            description: "Hello world",
+            title: "Développeur web | Axel Lavoie",
+            description: "Portfolio d'Axel Lavoie, développeur web sur Rouen. Derniers projets et réalisations, compétences et moyen de contact. N'hésitez pas à visiter le site et à me contacter.",
             hrefIcon   : "/ressources/images/logo/logo.png",
     
             // Open Graph
             openGraph : {
-                title      : "",
-                description: "",
-                image      : "",
-                type       : "",
-                url        : ""
+                title: "Développeur web | Axel Lavoie",
+                description: "Portfolio d'Axel Lavoie, développeur web sur Rouen. Derniers projets et réalisations, compétences et moyen de contact. N'hésitez pas à visiter le site et à me contacter.",
+                image      : "/ressources/images/logo/logo.png",
+                type       : "website",
+                url        : "https://axel-lavoie.com/"
             }
         },
 
