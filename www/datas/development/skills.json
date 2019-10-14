@@ -11,6 +11,12 @@
             "value": 80,
             "lineColor": "#68A063",
             "lineBgColor": "#323232"
+        },
+        {
+            "name": "React Native",
+            "value": 50,
+            "lineColor": "#51AAC4",
+            "lineBgColor": "#FFFFFF"
         }
     ],
     "secondary": [
