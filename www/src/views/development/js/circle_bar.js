@@ -32,7 +32,7 @@ $(document).ready(function() {
                     { 
                         text: _skill.name,
                         lineColor: _skill.lineColor,
-                        lineBgColor: _skill.lineBgColor,
+                        lineBgColor: "#323232",
                         lineWidth: "15",
                         lineWidthHover: "7px",
                         bgLineWidth: "10",
