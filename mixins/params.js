@@ -5,13 +5,13 @@ exports.getParams = function(_global, _callback) {
         // Page contents
         pageContent: {
             title: "Développeur web | Axel Lavoie",
-            description: "Portfolio d'Axel Lavoie, développeur web sur Rouen. Derniers projets et réalisations, compétences et moyen de contact. N'hésitez pas à visiter le site et à me contacter.",
+            description: "Portfolio d'Axel Lavoie, développeur web Javascript, NodeJs et React Native sur Rouen. Derniers projets et réalisations, compétences et moyen de contact.",
             hrefIcon   : "/ressources/images/logo/logo.png",
     
             // Open Graph
             openGraph : {
                 title: "Développeur web | Axel Lavoie",
-                description: "Portfolio d'Axel Lavoie, développeur web sur Rouen. Derniers projets et réalisations, compétences et moyen de contact. N'hésitez pas à visiter le site et à me contacter.",
+                description: "Portfolio d'Axel Lavoie, développeur web Javascript, NodeJs et React Native sur Rouen. Derniers projets et réalisations, compétences et moyen de contact.",
                 image      : "/ressources/images/logo/logo.png",
                 type       : "website",
                 url        : "https://axel-lavoie.com/"
