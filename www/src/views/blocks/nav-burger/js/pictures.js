@@ -11,6 +11,10 @@ $(document).ready(function() {
             {
                 id: "diy",
                 url: "/ressources/images/nav-hamburger/diy.jpg"
+            },
+            {
+                id: "infographics",
+                url: "/ressources/images/nav-hamburger/infographics.jpg"
             }
     ];
 

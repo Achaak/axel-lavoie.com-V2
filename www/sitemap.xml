@@ -11,6 +11,11 @@
   <priority>0.5</priority>
  </url>
  <url>
+  <loc>https://axel-lavoie.com/infographics/all</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
+ </url>
+ <url>
   <loc>https://axel-lavoie.com/about</loc>
   <changefreq>weekly</changefreq>
   <priority>0.7</priority>

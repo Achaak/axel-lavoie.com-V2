@@ -1,0 +1,75 @@
+@import '../../main/scss/colors';
+
+#albums, #pictures {
+    &.hidden {
+        display: none;
+    }
+}
+
+.albums-ctner, .pictures-ctner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .photo {
+        cursor: pointer;
+        max-height: 300px;
+        margin: 10px;
+        transition: all 200ms;
+
+        &:hover {
+            max-height: 320px;
+            margin: 0px;
+        }
+    }
+
+    .visual-ctner {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        display: block;
+        transition: all 200ms;
+
+        &:hover {
+            height: 220px;
+            width: 220px;
+            margin: 0px;
+        }
+
+        .photo {
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            height: auto;
+        }
+
+        .infos {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            background: linear-gradient(#0000ff00, $dark-grey);
+
+            .title {
+                color: white;
+                font-family: 'Roboto-Medium',sans-serif;
+            }
+
+            .title {
+                width: 300px;
+                font-size: 18px;
+            }
+        }
+    }
+}
